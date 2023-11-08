@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "75e390c2-41eb-481b-aab2-5e916d2ce03a",
+		"name": "praktikum-rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31037611"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/restapi-15/api-karyawan.php?function=getKaryawan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/restapi-15/api-karyawan.php?function=getKaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapi-15",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "getKaryawan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapi-15/api-karyawan.php?function=insertKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Masdika",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "083125113549",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Ponorogo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapi-15/api-karyawan.php?function=insertKaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapi-15",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "insertKaryawan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapi-15/api-karyawan.php?function=getKaryawanById&id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restapi-15/api-karyawan.php?function=getKaryawanById&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapi-15",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "getKaryawanById"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapi-15/api-karyawan.php?function=updateKaryawan&id=1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Masdika Ilhan Mansiz",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Pria Perkasa",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "086172531231",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Surabaya",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapi-15/api-karyawan.php?function=updateKaryawan&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapi-15",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "updateKaryawan"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
